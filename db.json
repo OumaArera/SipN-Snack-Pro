@@ -1,0 +1,35 @@
+{
+    "file": [
+        {"poster": "blob:https://web.whatsapp.com/a0e3f27d-4b0a-4c9a-a2a7-db542b048536",
+        "cappuccino": "blob:https://web.whatsapp.com/7fcfd837-6f18-4963-8e1c-fa272b67a355",
+        "latte": "blob:https://web.whatsapp.com/f531ee86-87e8-49d0-b4a8-d4fcdd5b05dd",
+        "greentea": "blob:https://web.whatsapp.com/3ed978e9-b808-4d83-af7d-044372a2a65b",
+        "blacktea": "blob:https://web.whatsapp.com/6c866288-b050-4a5c-ada0-4c704dc09be6",
+        "mandazi":"blob:https://web.whatsapp.com/2000305a-9e6c-43c7-b59f-c5e8d487b937",
+        "juice": "blob:https://web.whatsapp.com/00f9f153-ec4d-43a9-bf04-a2e738078c2a"
+    }
+    ],
+    "resources":[
+        {
+            "sugar": 1000,
+            "water": 10000,
+            "coffee": 1000,
+            "tea": 1000
+        }
+    ],
+    "juice-resources":[
+        {
+            "mango": 1000,
+            "orange": 1000,
+            "banana": 1000,
+            "beetroot": 1000
+        }
+    ],
+    "snacks":[
+        {"kangumu": 50,
+        "chapati": 50,
+        "mandazi": 50,
+        "queencakes": 50
+    }
+    ]
+  }
