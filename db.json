@@ -1,76 +1,115 @@
 {
     "posters": [
         {
-            "link": "Cafe menu poster - Made with PosterMyWall.jpg",
-            "id": 1
-        
-        },
-        {
-            "link": "Cup of cappuccino coffee drink - Made with PosterMyWall.jpg",
+            "link": "./menu/cappuccino.jpg",
             "name": "Cappuccino",
             "likes": 0,
-            "id": 2
+            "id": 1
         },
         {
             "link": "Coffee Latte Flyer  Poster Social Media Post - Made with PosterMyWall.jpg",
             "name": "Latte",
             "likes": 0,
-            "id": 3
+            "id": 2
         },
         {
             "link": "world tea day may 21st - Made with PosterMyWall.mp4",
             "name": "Green tea",
             "likes": 0,
-            "id": 4
+            "id": 3
         },
         {
             "link": "coffee album cover and flyer - Made with PosterMyWall.jpg",
             "name": "Black tea",
             "likes": 0,
-            "id": 5
+            "id": 4
         },
         {
             "link":"SNACKS POSTER - Made with PosterMyWall.jpg",
-            "name": "Munch Delights",
+            "name": "MunchDelights",
             "likes": 0,
-            "id": 6
+            "id": 5
 
         },
         {
             "link": "Fruit Juice Sunday Template - Made with PosterMyWall.jpg",
             "name": "Smoothies",
             "likes": 0,
-            "id": 7
+            "id": 6
         },
         {
             "link": "popcorn template - Made with PosterMyWall.jpg",
             "name": "Popcorns",
             "likes": 0,
-            "id": 8
+            "id": 7
         },
         {
             "link": "Coffe time - Made with PosterMyWall.mp4",
             "name": "Black Coffee",
             "likes": 0,
-            "id": 9
+            "id": 8
         }
     ],
     "hot_drinks":[
         {
             "id": 1,
-            "sugar": 1000,
-            "water": 5000,
-            "coffee": 1000,
-            "milk": 2000,
+            "name": "Cappuccino",
+            "quantity": 1000,
             "sales": 0
         },
         {
             "id": 2,
-            "tea": 1000,
-            "sugar": 1000,
-            "water": 5000,
-            "milk": 2000,
+            "name": "Latte",
+            "quantity": 1000,
             "sales": 0
+        },
+        {
+            "id":3,
+            "name": "Espresso",
+            "quantity": 1000,
+            "sales": 0
+        },
+        {
+            "id": 4,
+            "name": "Mocha",
+            "quantity": 1000,
+            "sales":0
+        },
+        {
+            "id":5,
+            "name":"Black Coffee",
+            "quantity":1000,
+            "sales":0
+        },
+        {
+            "id":6,
+            "name":"Milk Coffee",
+            "quantity":1000,
+            "sales":0
+        },
+        {
+            "id":7,
+            "name":"Black Tea",
+            "quantity":1000,
+            "sales":0
+        },
+        {
+            "id": 8,
+            "name":"Green Tea",
+            "quantity":1000,
+            "sales":0
+        },
+        {
+            "id":9,
+            "name":"Milk Tea",
+            "quantity":1000,
+            "sales":0
+        },
+        {
+            "id": 10,
+            "name": "Uji Power",
+            "quantity":1000,
+            "sales":0
         }
     ],
     "juices":[
@@ -119,6 +158,11 @@
         {
             "id": 4,
             "queencakes": 50,
+            "sales": 0
+        },
+        {
+            "id": 4,
+            "bajia": 50,
             "sales": 0
         }
     ],
