@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+#title{
+    text-align: center;
+    font-size: 3vw;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#snacks{
+    top: 59px;
+    right: 20px;
+    height: 200px;
+    width: 180px;
+    background-color: green;
+    position: absolute;
+}
+#juice{
+    top: 259px;
+    right: 20px;
+    height: 200px;
+    width: 180px;
+    background-color: red;
+    position: absolute;
+    
+}
+
+#hot-drinks{
+    top: 59px;
+    right: 250px;
+    background-color: rgb(192, 126, 11);
+    height: 400px;
+    width: 180px;
+    position: absolute;
+}
+#bill{
+    top: 59px;
+    right: 410px;
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    background-color: aqua;
+}
+.h3{
+    text-align:center;
+}
+.cover{
+    height: 30px;
+    width: 150px;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    list-style: none;
+    text-align: center;
+}
+#menu{
+    height: 600px;
+    width: 450px;
+}
+#menu-main{
+    height: 600px;
+    width: 450px;
+}
+#welcom{
+    height: 200px;
+    width: 200px;
+}
+.display{
+    height: 300px;
+    width: 900px;
+    margin-bottom: 40px;
+    background-color: blue;
+}
+.disp{
+    height: 300px;
+    width: 300px;
+}
