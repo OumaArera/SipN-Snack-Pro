@@ -1,50 +1,50 @@
 {
     "posters": [
         {
-            "link": "./menu/cappuccino.jpg",
+            "link": "./images/cappuccino.jpg",
             "name": "Cappuccino",
             "likes": 0,
             "id": 1
         },
         {
-            "link": "Coffee Latte Flyer  Poster Social Media Post - Made with PosterMyWall.jpg",
+            "link": "./images/latte.jpg",
             "name": "Latte",
             "likes": 0,
             "id": 2
         },
         {
-            "link": "world tea day may 21st - Made with PosterMyWall.mp4",
+            "link": "./images/green-tea.mp4",
             "name": "Green tea",
             "likes": 0,
             "id": 3
         },
         {
-            "link": "coffee album cover and flyer - Made with PosterMyWall.jpg",
+            "link": "./images/blacktea.jpg",
             "name": "Black tea",
             "likes": 0,
             "id": 4
         },
         {
-            "link":"SNACKS POSTER - Made with PosterMyWall.jpg",
+            "link":".images/snacks.jpg",
             "name": "MunchDelights",
             "likes": 0,
             "id": 5
 
         },
         {
-            "link": "Fruit Juice Sunday Template - Made with PosterMyWall.jpg",
+            "link": "./images/juice.jpg",
             "name": "Smoothies",
             "likes": 0,
             "id": 6
         },
         {
-            "link": "popcorn template - Made with PosterMyWall.jpg",
+            "link": "./images/popcorns.jpg",
             "name": "Popcorns",
             "likes": 0,
             "id": 7
         },
         {
-            "link": "Coffe time - Made with PosterMyWall.mp4",
+            "link": "./images/black-coffee.mp4",
             "name": "Black Coffee",
             "likes": 0,
             "id": 8
@@ -115,54 +115,64 @@
     "juices":[
         {
             "id": 1,
-            "mango": 1000,
+            "quantity": 1000,
+            "name": "Mango",
             "sales": 0
         },
         {
             "id": 2,
-            "orange": 1000,
+            "quantity": 1000,
+            "name": "Orange",
             "sales": 0
         },
         {
             "id": 3,
-            "pineapple": 1000,
+            "quantity": 1000,
+            "name": "Pineapple",
             "sales": 0
         },
         {
             "id": 4,
-            "apple": 1000,
+            "quantity": 1000,
+            "name":"Apple",
             "sales": 0
         },
         {
             "id": 5,
-            "beetroot": 1000,
+            "quantity": 1000,
+            "name":"Beetroot",
             "sales": 0
         }
     ],
     "snacks":[
         {
             "id": 1,
-            "kangumu": 50,
+            "quantity": 50,
+            "name": "Kangumu",
             "sales": 0
         },
         {
             "id": 2,
-            "chapati": 50,
+            "quantity": 50,
+            "name": "Chapati",
             "sales":0
         },
         {
             "id": 3,
-            "mandazi": 50,
+            "quantity": 50,
+            "name": "Mandazi",
             "sales": 0
         },
         {
             "id": 4,
-            "queencakes": 50,
+            "quantity": 50,
+            "name":"Queencakes",
             "sales": 0
         },
         {
             "id": 4,
-            "bajia": 50,
+            "quantity": 50,
+            "name":"Bajia",
             "sales": 0
         }
     ],
