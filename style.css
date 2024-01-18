@@ -28,6 +28,7 @@
     /* background-color: yellow; */
     height: 600px;
     width: 350px;
+    text-align: justify;
 }
 #juice{
     top: 109px;
@@ -63,14 +64,7 @@
     position: absolute;
     /* background-color: blueviolet; */
 }
-/* #buy-div{
-    top: 300px;
-    left: 0px;
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    background-color: blueviolet;
-} */
+
 .h3{
     text-align:center;
 }
@@ -198,7 +192,7 @@
     padding: 0;
     cursor: pointer;
     font-size: 1.3vw;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-top: 5px;
 }
 .log{
@@ -219,6 +213,7 @@
 }
 .input{
     background-color: white;
+    margin-top: 10px;
 
 }
 .change{
@@ -263,3 +258,38 @@
     right: 250px;
     position: absolute;
 }
+select#catego {
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    color: black; /* Set the text color to black */
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+select#catego option {
+    background-color: white;
+    color: black; /* Set the text color of options to black */
+}
+
+label#categori {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    color: white; /* Set the text color of the label to white */
+}
+.category{
+    font-size: 1.2vw;
+    color: black;
+}
+.cat{
+    font-size: 1.2vw;
+    /* right: 0; */
+}
+.entry{
+    background-color: whitesmoke;
+    margin: 10px;
+}
+
+
