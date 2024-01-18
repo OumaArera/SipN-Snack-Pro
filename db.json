@@ -71,8 +71,8 @@
     {
       "id": 4,
       "name": "Mocha",
-      "quantity": 9750,
-      "sales": 40
+      "quantity": 9500,
+      "sales": 80
     },
     {
       "id": 5,
@@ -132,9 +132,9 @@
     },
     {
       "id": 4,
-      "quantity": 9000,
+      "quantity": 8750,
       "name": "Apple",
-      "sales": 200
+      "sales": 250
     },
     {
       "id": 5,
@@ -144,8 +144,8 @@
     },
     {
       "name": "Cocktail",
-      "quantity": 9500,
-      "sales": 100,
+      "quantity": 9250,
+      "sales": 150,
       "id": 7
     }
   ],
@@ -158,9 +158,9 @@
     },
     {
       "id": 2,
-      "quantity": 49,
+      "quantity": 48,
       "name": "Chapati",
-      "sales": 20
+      "sales": 40
     },
     {
       "id": 3,
@@ -188,8 +188,8 @@
     },
     {
       "name": "Eggs",
-      "quantity": 49,
-      "sales": 20,
+      "quantity": 48,
+      "sales": 40,
       "id": 7
     }
   ],
@@ -203,7 +203,7 @@
   "report": [
     {
       "id": 1,
-      "total": 410
+      "total": 540
     }
   ]
 }
