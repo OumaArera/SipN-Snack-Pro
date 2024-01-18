@@ -336,8 +336,11 @@ document.addEventListener("DOMContentLoaded",  () => {
                     <button id="remove" class="log">Remove</button>
                 </form>
                 `;
+                // Add click event to display total sales
                 document.querySelector("#report").addEventListener("click", displayReport)
+                // Add click event to execute list of categories
                 document.querySelector("#add").addEventListener("click", () => categoriesList(hotDrinks, juices, snacks))
+                // Add click event to execute removing item
                 document.querySelector("#remove").addEventListener("click", removeItem)
             }
         })
@@ -417,21 +420,91 @@ document.addEventListener("DOMContentLoaded",  () => {
         // Initial content display
         const initialCategory = dropdown.value;
     }
+
+    // Function populates a card to enter the item to delete
+    // Function populates a card to enter the item to delete
+    const populateItemToDelete = selected => {
+        const populatedItemDetails = document.querySelector("#admin")
+        populatedItemDetails.innerHTML = `
+            <input style="font-size:1.2vw"  type="text" class="entry" id="del" class="input" name="password" placeholder="Enter quantity">
+            <form id="remove-item" action="submit">
+                <button id="log">Remove</button>
+            </form>
+        `;
+
+        // Add a submit event to execute remove when the "Remove" button is clicked
+        document.querySelector("#remove-item").addEventListener("submit", event => {
+            event.preventDefault();
+            // Get the value of "del" input when the form is submitted
+            const whatToDelete = document.querySelector("#del").value;
+            // Call the function to delete the item
+            deleteItem(selected, whatToDelete);
+        });
+    }
+    // Function populates a dropdown to select item to delete
+    const removeItem = () =>{
+        const toDelete =document.querySelector("#admin")
+        toDelete.innerHTML= `
+            <label id="categori" class="delete" for="category" class="cat">Select a Category</label>
+            <select id="catego" class="dropdown" name="category">
+                <option class="category" value="select"></option>
+                <option class="category" value="http://localhost:3000/hot_drinks">SteamySips</option>
+                <option class="category" value="http://localhost:3000/snacks">MunchDelights</option>
+                <option class="category" value="http://localhost:3000/juices">Smoothies</option>
+            </select>
+        `;
+        // Add change event listener to the dropdown
+        document.querySelector(".dropdown").addEventListener("change", event => {
+            const selected = event.target.value;
+            // Call the function to fetch data of given item and delete
+            populateItemToDelete(selected)
+        })
+        // Initial content display
+        const initialCategory = dropdown.value;
+    }
+
+    /*
+    Function sends a GEt request to the given server
+    Iterates throught the server trying to match item name
+    Once it locates the item, it makes another DELETE request to delete the item
+    Once it is deleted, it refreshes the page
+    */
+    const deleteItem = (selected, whatToDelete) => {
+        // Fetch data from the server
+        fetch(selected)
+            .then(res => res.json())
+            .then(data => {
+                // Search for the item to delete in the fetched data
+                const itemToDelete = data.find(element => element.name === whatToDelete);
+    
+                if (itemToDelete) {
+                    // If the item is found, delete it using its ID
+                    const deleteId = itemToDelete.id;
+                    fetch(`${selected}/${deleteId}`, {
+                        method: "DELETE",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "application/json"
+                        }
+                    })
+                    .then(res => {
+                        // Handle the response if needed
+                        if (res.status === 200) {
+                            // Item deleted successfully (HTTP 204 No Content)
+                            alert(`${whatToDelete} has been deleted successfully!`)
+                            // You may want to reload the page or update the UI here
+                        } else {
+                            // Handle other response statuses if necessary
+                            alert("Failed to delete item!")
+                        }
+                    })
+                    .catch(error => console.log(error));
+                } else {
+                    alert(`Error 404\n\n${whatToDelete} not found!`)
+                }
+            })
+            .catch(err => console.log(err));
+    }
+
 })
 
-const removeItem = () =>{
-    const toDelete =document.querySelector("#admin")
-    toDelete.innerHTML= `
-        <label id="categori" class="delete" for="category" class="cat">Select a Category</label>
-        <select id="catego" class="dropdown" name="category">
-            <option class="category" value="select">Select Category</option>
-            <option class="category" value="http://localhost:3000/hot_drinks" selected>SteamySips</option>
-            <option class="category" value="http://localhost:3000/snacks">MunchDelights</option>
-            <option class="category" value="http://localhost:3000/juices">Smoothies</option>
-        </select>
-    `;
-    document.querySelector(".delete").addEventListener("change", event => {
-        const selected = event.target.value;
-        itemToDelete(selected)
-    })
-}
