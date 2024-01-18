@@ -3,72 +3,74 @@
     padding: 0;
     box-sizing: border-box;
     background-size: cover;
+    background-color: black;
 }
 #title{
     text-align: center;
     font-size: 3vw;
     background-color: black;
     color: whitesmoke;
+    margin-bottom: 50px;
 }
 
 #snacks{
-    top: 59px;
+    top: 109px;
     left: 980px;
     height: 600px;
     width: 200px;
-    background-color: green;
+    /* background-color: green; */
     position: absolute;
 }
 #admin{
-    top: 59px;
+    top: 109px;
     left: 1400px;
     position: absolute;
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 600px;
     width: 350px;
 }
 #juice{
-    top: 59px;
+    top: 109px;
     left: 1190px;
     height: 600px;
     width: 200px;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     
 }
 
 #hot-drinks{
-    top: 59px;
+    top: 109px;
     left: 770px;
-    background-color: rgb(192, 126, 11);
+    /* background-color: rgb(192, 126, 11); */
     height: 600px;
     width: 200px;
     position: absolute;
 }
 #bill{
-    top: 59px;
-    left: 460px;
+    top: 109px;
+    left: 451px;
     height: 300px;
     width: 300px;
     position: absolute;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 #buy{
-    top: 300px;
+    top: 390px;
     left: 0px;
     width: 300px;
-    height: 300px;
+    height: 210px;
     position: absolute;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
-#buy-div{
+/* #buy-div{
     top: 300px;
     left: 0px;
     width: 1000px;
     height: 1000px;
     position: absolute;
     background-color: blueviolet;
-}
+} */
 .h3{
     text-align:center;
 }
@@ -90,7 +92,7 @@
     width: 450px;
 }
 #welcom{
-    height: 300px;
+    height: 400px;
     width: 300px;
 }
 .display{
@@ -106,6 +108,7 @@
 }
 .h4{
     font-size: 1.5vw;
+    color: whitesmoke;
 }
 .btn{
     font-size: 1vw;
@@ -160,14 +163,68 @@
     font-size: 1.2vw;
     margin: 8px;
     text-align: center;
+    color: whitesmoke;
+    
 }
 .ttle{
     text-align: center;
     font-size: 1.3vw;
+    color: whitesmoke;
 }
 .names{
     height: 40px;
     width: 150px;
-    background-color: blue;
+    /* background-color: blue; */
     margin-left: 20px;
+}
+#pay{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2vw;
+    margin-left: 3px;
+    margin-top: 5px;
+    color: whitesmoke;
+}
+#label-1{
+    margin-top: 10px;
+}
+.label{
+    color: whitesmoke;
+    margin-top: 20px;
+}
+.input{
+    background-color: white;
+
+}
+.change{
+    color: whitesmoke;
+    font-size: 1.2vw;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+.names{
+    background-color: black;
+    background-image: url();
+}
+.product{
+    color: whitesmoke;
+    font-size: 1.2vw;
+    margin-top: 15px;
+    margin-left: 8px;
+}
+.like{
+    font-size: 1.2vw;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+.dislike{
+    font-size: 1.2vw;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
 }
