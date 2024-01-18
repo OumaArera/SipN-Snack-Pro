@@ -1,184 +1,191 @@
 {
-    "posters": [
-        {
-            "link": "./images/cappuccino.jpg",
-            "name": "Cappuccino",
-            "likes": 0,
-            "id": 1
-        },
-        {
-            "link": "./images/latte.jpg",
-            "name": "Latte",
-            "likes": 0,
-            "id": 2
-        },
-        {
-            "link": "./images/green-tea.mp4",
-            "name": "Green tea",
-            "likes": 0,
-            "id": 3
-        },
-        {
-            "link": "./images/blacktea.jpg",
-            "name": "Black tea",
-            "likes": 0,
-            "id": 4
-        },
-        {
-            "link":".images/snacks.jpg",
-            "name": "MunchDelights",
-            "likes": 0,
-            "id": 5
-
-        },
-        {
-            "link": "./images/juice.jpg",
-            "name": "Smoothies",
-            "likes": 0,
-            "id": 6
-        },
-        {
-            "link": "./images/popcorns.jpg",
-            "name": "Popcorns",
-            "likes": 0,
-            "id": 7
-        },
-        {
-            "link": "./images/black-coffee.mp4",
-            "name": "Black Coffee",
-            "likes": 0,
-            "id": 8
-        }
-    ],
-    "hot_drinks":[
-        {
-            "id": 1,
-            "name": "Cappuccino",
-            "quantity": 10000,
-            "sales": 0
-        },
-        {
-            "id": 2,
-            "name": "Latte",
-            "quantity": 10000,
-            "sales": 0
-        },
-        {
-            "id":3,
-            "name": "Espresso",
-            "quantity": 10000,
-            "sales": 0
-        },
-        {
-            "id": 4,
-            "name": "Mocha",
-            "quantity": 10000,
-            "sales":0
-        },
-        {
-            "id":5,
-            "name":"Black Coffee",
-            "quantity":10000,
-            "sales":0
-        },
-        {
-            "id":6,
-            "name":"Milk Coffee",
-            "quantity":10000,
-            "sales":0
-        },
-        {
-            "id":7,
-            "name":"Black Tea",
-            "quantity":10000,
-            "sales":0
-        },
-        {
-            "id": 8,
-            "name":"Green Tea",
-            "quantity":10000,
-            "sales":0
-        },
-        {
-            "id":9,
-            "name":"Milk Tea",
-            "quantity":10000,
-            "sales":0
-        },
-        {
-            "id": 10,
-            "name": "Uji Power",
-            "quantity":10000,
-            "sales":0
-        }
-    ],
-    "juices":[
-        {
-            "id": 1,
-            "quantity": 10000,
-            "name": "Mango",
-            "sales": 0
-        },
-        {
-            "id": 2,
-            "quantity": 10000,
-            "name": "Orange",
-            "sales": 0
-        },
-        {
-            "id": 3,
-            "quantity": 10000,
-            "name": "Pineapple",
-            "sales": 0
-        },
-        {
-            "id": 4,
-            "quantity": 10000,
-            "name":"Apple",
-            "sales": 0
-        },
-        {
-            "id": 5,
-            "quantity": 10000,
-            "name":"Beetroot",
-            "sales": 0
-        }
-    ],
-    "snacks":[
-        {
-            "id": 1,
-            "quantity": 50,
-            "name": "Kangumu",
-            "sales": 0
-        },
-        {
-            "id": 2,
-            "quantity": 50,
-            "name": "Chapati",
-            "sales":0
-        },
-        {
-            "id": 3,
-            "quantity": 50,
-            "name": "Mandazi",
-            "sales": 0
-        },
-        {
-            "id": 4,
-            "quantity": 50,
-            "name":"Queencakes",
-            "sales": 0
-        },
-        {
-            "id": 4,
-            "quantity": 50,
-            "name":"Bajia",
-            "sales": 0
-        }
-    ],
-    "report":[
-        {
-            "total-sales": 0
-        }
-    ]
-  }
+  "posters": [
+    {
+      "link": "./images/cappuccino.jpg",
+      "name": "Cappuccino",
+      "likes": 0,
+      "id": 1
+    },
+    {
+      "link": "./images/latte.jpg",
+      "name": "Latte",
+      "likes": 0,
+      "id": 2
+    },
+    {
+      "link": "./images/green-tea.mp4",
+      "name": "Green tea",
+      "likes": 0,
+      "id": 3
+    },
+    {
+      "link": "./images/blacktea.jpg",
+      "name": "Black tea",
+      "likes": 0,
+      "id": 4
+    },
+    {
+      "link": ".images/snacks.jpg",
+      "name": "MunchDelights",
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "link": "./images/juice.jpg",
+      "name": "Smoothies",
+      "likes": 0,
+      "id": 6
+    },
+    {
+      "link": "./images/popcorns.jpg",
+      "name": "Popcorns",
+      "likes": 0,
+      "id": 7
+    },
+    {
+      "link": "./images/black-coffee.mp4",
+      "name": "Black Coffee",
+      "likes": 0,
+      "id": 8
+    }
+  ],
+  "hot_drinks": [
+    {
+      "id": 1,
+      "name": "Cappuccino",
+      "quantity": 9250,
+      "sales": 120
+    },
+    {
+      "id": 2,
+      "name": "Latte",
+      "quantity": 10000,
+      "sales": 0
+    },
+    {
+      "id": 3,
+      "name": "Espresso",
+      "quantity": 9750,
+      "sales": 40
+    },
+    {
+      "id": 4,
+      "name": "Mocha",
+      "quantity": 9750,
+      "sales": 40
+    },
+    {
+      "id": 5,
+      "name": "Black Coffee",
+      "quantity": 10000,
+      "sales": 0
+    },
+    {
+      "id": 6,
+      "name": "Milk Coffee",
+      "quantity": 10000,
+      "sales": 0
+    },
+    {
+      "id": 7,
+      "name": "Black Tea",
+      "quantity": 9000,
+      "sales": 160
+    },
+    {
+      "id": 8,
+      "name": "Green Tea",
+      "quantity": 10000,
+      "sales": 0
+    },
+    {
+      "id": 9,
+      "name": "Milk Tea",
+      "quantity": 9750,
+      "sales": 40
+    },
+    {
+      "id": 10,
+      "name": "Uji Power",
+      "quantity": 10000,
+      "sales": 0
+    }
+  ],
+  "juices": [
+    {
+      "id": 1,
+      "quantity": 9250,
+      "name": "Mango",
+      "sales": 250
+    },
+    {
+      "id": 2,
+      "quantity": 9750,
+      "name": "Orange",
+      "sales": 50
+    },
+    {
+      "id": 3,
+      "quantity": 9750,
+      "name": "Pineapple",
+      "sales": 50
+    },
+    {
+      "id": 4,
+      "quantity": 9250,
+      "name": "Apple",
+      "sales": 150
+    },
+    {
+      "id": 5,
+      "quantity": 9750,
+      "name": "Beetroot",
+      "sales": 50
+    }
+  ],
+  "snacks": [
+    {
+      "id": 1,
+      "quantity": 49,
+      "name": "Kangumu",
+      "sales": 20
+    },
+    {
+      "id": 2,
+      "quantity": 49,
+      "name": "Chapati",
+      "sales": 20
+    },
+    {
+      "id": 3,
+      "quantity": 50,
+      "name": "Mandazi",
+      "sales": 0
+    },
+    {
+      "id": 4,
+      "quantity": 48,
+      "name": "Queencakes",
+      "sales": 40
+    },
+    {
+      "id": 4,
+      "quantity": 50,
+      "name": "Bajia",
+      "sales": 0
+    }
+  ],
+  "report": [
+    {
+      "id": 1,
+      "total": 40
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "arera",
+      "password": "Ouma123"
+    }
+  ]
+}
