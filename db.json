@@ -185,6 +185,12 @@
       "quantity": "50",
       "sales": 0,
       "id": 6
+    },
+    {
+      "name": "Eggs",
+      "quantity": 49,
+      "sales": 20,
+      "id": 7
     }
   ],
   "user": [
@@ -197,7 +203,7 @@
   "report": [
     {
       "id": 1,
-      "total": 390
+      "total": 410
     }
   ]
 }
