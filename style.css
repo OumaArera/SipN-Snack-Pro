@@ -217,8 +217,9 @@
 
 }
 .change{
-    color: whitesmoke;
-    font-size: 1.2vw;
+    background-color: whitesmoke;
+    color: rgb(119, 34, 180);
+    font-size: 1.4vw;
     border: none;
     background: none;
     padding: 0;
@@ -291,5 +292,53 @@ label#categori {
     background-color: whitesmoke;
     margin: 10px;
 }
+.dislike{
+    top: 331px;
+    left: 100px;
+    position: absolute;
+    cursor: pointer; 
+    color: #4CAF50; 
+    transition: color 0.3s ease; 
+}
+.no-likes{
+    color: whitesmoke;
+    top: 331px;
+    left: 30px;
+    position: absolute;
+}
 
+.no-dislikes{
+    color: whitesmoke;
+    top: 331px;
+    left: 130px;
+    position: absolute;
+}
+.like{
+    animation: shake 0.5s;
+    color: whitesmoke;
+    top: 331px;
+    position: absolute;
+}
+.dislike{
+    color: whitesmoke;
+}
 
+/* Add a CSS class for the shake animation */
+.shake {
+    animation: shake 0.5s;
+}
+
+/* Add a CSS class for changing the color */
+.change-color {
+    color: red; /* Change to the desired color */
+    /* You can also add animation here to smoothly transition the color change */
+}
+
+/* Define the shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
