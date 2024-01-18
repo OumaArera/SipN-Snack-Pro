@@ -213,12 +213,12 @@ document.addEventListener("DOMContentLoaded",  () => {
                 buy.innerHTML = `
                 <br>
                 <p class="product" style="font-size: 1.2vw">Welcome again 😊</p>`;
-            }, 5000); // 5000 milliseconds (5 seconds)
+            }, 2000); // 5000 milliseconds (5 seconds)
             // Set timeout for the page to only update after the message has been populated
             setTimeout(() =>{
                 // Updates the transaction to the server
                 updateTransaction(productUrl, productId, remainingQuantity, priceUpdate)
-            }, 6500)
+            }, 4000)
         } else if (total === price) {
             totalSales += total;
             // Define remaining quantity
@@ -324,6 +324,7 @@ document.addEventListener("DOMContentLoaded",  () => {
             const userPassword = document.querySelector("#password").value;
             // Check if the password and user name is correct
             if (data.username === userName && data.password === userPassword){
+                alert("Signin sucessful")
                 // Manipulate the HTML content
                 const accessRights = document.querySelector("#admin");
                 // Append to DOM
@@ -342,7 +343,8 @@ document.addEventListener("DOMContentLoaded",  () => {
                 document.querySelector("#add").addEventListener("click", () => categoriesList(hotDrinks, juices, snacks))
                 // Add click event to execute removing item
                 document.querySelector("#remove").addEventListener("click", removeItem)
-            }
+            }else if (data.username!== userName || data.password !== userPassword)
+                alert("Username or Password incorrect. Try again")
         })
     }
 
@@ -355,6 +357,8 @@ document.addEventListener("DOMContentLoaded",  () => {
             const reportData = document.querySelector("#admin");
             reportData.innerHTML=`
                 <p class="product" style="font-size: 1.2vw">Total Sales: ${data.total}</p> 
+                <br>
+                <button id="log">Back</button>
             `;
         })
     }
@@ -505,6 +509,38 @@ document.addEventListener("DOMContentLoaded",  () => {
             })
             .catch(err => console.log(err));
     }
+    
+    // Get all like and dislike buttons
+    const likeButtons = document.querySelectorAll(".like");
+    const dislikeButtons = document.querySelectorAll(".dislike");
+
+    // Add click event listeners to the like buttons
+    likeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            // Add the "shake" class for the shake animation
+            button.classList.add("shake");
+            
+            // You can remove the "shake" class after the animation completes
+            button.addEventListener("animationend", () => {
+                button.classList.remove("shake");
+            });
+        });
+    });
+
+    // Add click event listeners to the dislike buttons
+    dislikeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            // Add the "change-color" class for changing color
+            button.classList.add("change-color");
+            
+            // You can remove the "change-color" class after a delay to revert the color
+            setTimeout(() => {
+                button.classList.remove("change-color");
+            }, 500); // Change color back after 0.5 seconds (500 milliseconds)
+        });
+    });
 
 })
+
+
 
