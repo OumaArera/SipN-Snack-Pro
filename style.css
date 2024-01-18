@@ -164,6 +164,7 @@
     margin: 8px;
     text-align: center;
     color: whitesmoke;
+    cursor: pointer;
     
 }
 .ttle{
@@ -184,6 +185,30 @@
     margin-left: 3px;
     margin-top: 5px;
     color: whitesmoke;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+
+}
+#log{
+    color: whitesmoke;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.3vw;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+.log{
+    color: whitesmoke;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.3vw;
+    margin: 20px;
 }
 #label-1{
     margin-top: 10px;
@@ -227,4 +252,14 @@
     background: none;
     padding: 0;
     cursor: pointer;
+}
+#signup{
+    top: 0px;
+    right: 150px;
+    position: absolute;
+}
+#user{
+    top: 0;
+    right: 250px;
+    position: absolute;
 }
