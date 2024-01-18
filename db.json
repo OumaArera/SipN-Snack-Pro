@@ -53,8 +53,8 @@
     {
       "id": 1,
       "name": "Cappuccino",
-      "quantity": 9250,
-      "sales": 120
+      "quantity": 8750,
+      "sales": 200
     },
     {
       "id": 2,
@@ -77,8 +77,8 @@
     {
       "id": 5,
       "name": "Black Coffee",
-      "quantity": 10000,
-      "sales": 0
+      "quantity": 9750,
+      "sales": 40
     },
     {
       "id": 6,
@@ -107,8 +107,8 @@
     {
       "id": 10,
       "name": "Uji Power",
-      "quantity": 10000,
-      "sales": 0
+      "quantity": 9500,
+      "sales": 80
     }
   ],
   "juices": [
@@ -132,15 +132,21 @@
     },
     {
       "id": 4,
-      "quantity": 9250,
+      "quantity": 9000,
       "name": "Apple",
-      "sales": 150
+      "sales": 200
     },
     {
       "id": 5,
-      "quantity": 9750,
+      "quantity": 9500,
       "name": "Beetroot",
-      "sales": 50
+      "sales": 100
+    },
+    {
+      "name": "Cocktail",
+      "quantity": 9500,
+      "sales": 100,
+      "id": 7
     }
   ],
   "snacks": [
@@ -164,21 +170,21 @@
     },
     {
       "id": 4,
-      "quantity": 48,
+      "quantity": 49,
       "name": "Queencakes",
-      "sales": 40
+      "sales": 20
     },
     {
-      "id": 4,
-      "quantity": 50,
+      "id": 5,
+      "quantity": 47,
       "name": "Bajia",
-      "sales": 0
-    }
-  ],
-  "report": [
+      "sales": 60
+    },
     {
-      "id": 1,
-      "total": 40
+      "name": "Samora",
+      "quantity": "50",
+      "sales": 0,
+      "id": 6
     }
   ],
   "user": [
@@ -186,6 +192,12 @@
       "id": 1,
       "username": "arera",
       "password": "Ouma123"
+    }
+  ],
+  "report": [
+    {
+      "id": 1,
+      "total": 390
     }
   ]
 }
