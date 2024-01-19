@@ -14,6 +14,23 @@ cd vending-machine-web-app
 3. Open the index.html file in your web browser to access the vending machine interface.
 
 ## Features
+
+### Display
+
+#### Menu
+A menu on the far left with product prices so that user can know how much to pay
+#### Overview
+The Display section consists of individual product cards, each displaying an image of the product, the product's name, and optional buttons for customer feedback. Here's a breakdown of the components in this section:
+
+Product Cards: Each product is presented in a separate card. The card includes an image of the product and its name. The images are in GIF format, providing an animated representation of the product.
+
+Product Names: Below each product's image, there is a descriptive name that identifies the product. This makes it easy for customers to understand what they are selecting.
+
+#### Usage
+Product Selection: Customers can browse through the product cards to choose the item they want to purchase.
+
+Product Details: The animated GIFs provide a visual representation of the products, making it more engaging for customers.
+
 ### Customer Interface
 - Product Selection: Customers can choose from different product categories, including hot drinks, juices, and snacks.
 
