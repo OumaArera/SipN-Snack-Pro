@@ -325,27 +325,30 @@ document.addEventListener("DOMContentLoaded",  () => {
             // Check if the password and user name is correct
             if (data.username === userName && data.password === userPassword){
                 alert("Signin sucessful")
-                // Manipulate the HTML content
-                const accessRights = document.querySelector("#admin");
-                // Append to DOM
-                accessRights.innerHTML = `
-                <button id="report" class="log">Report</button>
-                <br>
-                <button id="add" class="log">Show Categories</button>
-                <br>
-                <form action="submit" class="remove-item">
-                    <button id="remove" class="log">Remove</button>
-                </form>
-                `;
-                // Add click event to display total sales
-                document.querySelector("#report").addEventListener("click", displayReport)
-                // Add click event to execute list of categories
-                document.querySelector("#add").addEventListener("click", () => categoriesList(hotDrinks, juices, snacks))
-                // Add click event to execute removing item
-                document.querySelector("#remove").addEventListener("click", removeItem)
+                adminAction()
             }else if (data.username!== userName || data.password !== userPassword)
                 alert("Username or Password incorrect. Try again")
         })
+    }
+    const adminAction = () =>{
+        // Manipulate the HTML content
+        const accessRights = document.querySelector("#admin");
+        // Append to DOM
+        accessRights.innerHTML = `
+        <button id="report" class="log">Report</button>
+        <br>
+        <button id="add" class="log">Show Categories</button>
+        <br>
+        <form action="submit" class="remove-item">
+            <button id="remove" class="log">Remove</button>
+        </form>
+        `;
+        // Add click event to display total sales
+        document.querySelector("#report").addEventListener("click", displayReport)
+        // Add click event to execute list of categories
+        document.querySelector("#add").addEventListener("click", () => categoriesList(hotDrinks, juices, snacks))
+        // Add click event to execute removing item
+        document.querySelector("#remove").addEventListener("click", removeItem)
     }
 
     // The function displays the report from the server
@@ -358,8 +361,10 @@ document.addEventListener("DOMContentLoaded",  () => {
             reportData.innerHTML=`
                 <p class="product" style="font-size: 1.2vw">Total Sales: ${data.total}</p> 
                 <br>
-                <button id="log">Back</button>
+                <button class="back" id="log">Back</button>
             `;
+            // Go back to previous page
+            document.querySelector(".back").addEventListener("click", adminAction)
         })
     }
 
@@ -373,7 +378,11 @@ document.addEventListener("DOMContentLoaded",  () => {
             <form id="my-new" action="submit">
                 <button id="log">Submit</button>
             </form>
+            <button class="back" id="log">Back</button>
         `;
+        // Go back to previous page
+        document.querySelector(".back").addEventListener("click", adminAction)
+        // Add event to submit request
         document.querySelector("#my-new").addEventListener("submit", e => {
             e.preventDefault()
             const productMpya = document.querySelector("#product-name").value;
@@ -434,8 +443,10 @@ document.addEventListener("DOMContentLoaded",  () => {
             <form id="remove-item" action="submit">
                 <button id="log">Remove</button>
             </form>
+            <button class="back" id="log">Back</button>
         `;
-
+        // Go back to the previous page
+        document.querySelector(".back").addEventListener("click", adminAction)
         // Add a submit event to execute remove when the "Remove" button is clicked
         document.querySelector("#remove-item").addEventListener("submit", event => {
             event.preventDefault();
@@ -510,35 +521,35 @@ document.addEventListener("DOMContentLoaded",  () => {
             .catch(err => console.log(err));
     }
     
-    // Get all like and dislike buttons
-    const likeButtons = document.querySelectorAll(".like");
-    const dislikeButtons = document.querySelectorAll(".dislike");
+    // // Get all like and dislike buttons
+    // const likeButtons = document.querySelectorAll(".like");
+    // const dislikeButtons = document.querySelectorAll(".dislike");
 
-    // Add click event listeners to the like buttons
-    likeButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            // Add the "shake" class for the shake animation
-            button.classList.add("shake");
+    // // Add click event listeners to the like buttons
+    // likeButtons.forEach(button => {
+    //     button.addEventListener("click", () => {
+    //         // Add the "shake" class for the shake animation
+    //         button.classList.add("shake");
             
-            // You can remove the "shake" class after the animation completes
-            button.addEventListener("animationend", () => {
-                button.classList.remove("shake");
-            });
-        });
-    });
+    //         // Remove the "shake" class after the animation completes
+    //         setTimeout(() => {
+    //             button.classList.remove("shake");
+    //         }, 500); // Remove the class after 0.5 seconds (500 milliseconds)
+    //     });
+    // });
 
-    // Add click event listeners to the dislike buttons
-    dislikeButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            // Add the "change-color" class for changing color
-            button.classList.add("change-color");
+    // // Add click event listeners to the dislike buttons
+    // dislikeButtons.forEach(button => {
+    //     button.addEventListener("click", () => {
+    //         // Add the "change-color" class for changing color
+    //         button.classList.add("change-color");
             
-            // You can remove the "change-color" class after a delay to revert the color
-            setTimeout(() => {
-                button.classList.remove("change-color");
-            }, 500); // Change color back after 0.5 seconds (500 milliseconds)
-        });
-    });
+    //         // You can remove the "change-color" class after a delay to revert the color
+    //         setTimeout(() => {
+    //             button.classList.remove("change-color");
+    //         }, 500); // Change color back after 0.5 seconds (500 milliseconds)
+    //     });
+    // });
 
 })
 
