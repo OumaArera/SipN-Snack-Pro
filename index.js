@@ -1,6 +1,7 @@
 // Defer JS file from loading until the HTML page load
 document.addEventListener("DOMContentLoaded",  () => {
     // Create variables to store the json addresses
+    const publicApi = "https://coffee.alexflipnote.dev/random.json";
     const hotDrinks = "http://localhost:3000/hot_drinks";
     const juices = "http://localhost:3000/juices";
     const snacks = "http://localhost:3000/snacks";
@@ -176,7 +177,6 @@ document.addEventListener("DOMContentLoaded",  () => {
         setTimeout(() => {
             window.location.reload(); // Refresh the page
             }, 2000); // 2000 milliseconds (2 seconds)
-        
     }
 
     // Function processes payment then posts the transactions to the server
