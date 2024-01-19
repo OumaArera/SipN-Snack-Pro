@@ -53,8 +53,8 @@
     {
       "id": 1,
       "name": "Cappuccino",
-      "quantity": 8750,
-      "sales": 200
+      "quantity": 8500,
+      "sales": 240
     },
     {
       "id": 2,
@@ -141,12 +141,6 @@
       "quantity": 9500,
       "name": "Beetroot",
       "sales": 100
-    },
-    {
-      "name": "Cocktail",
-      "quantity": 9000,
-      "sales": 200,
-      "id": 7
     }
   ],
   "snacks": [
@@ -179,12 +173,6 @@
       "quantity": 47,
       "name": "Bajia",
       "sales": 60
-    },
-    {
-      "name": "Samora",
-      "quantity": 49,
-      "sales": 20,
-      "id": 6
     }
   ],
   "user": [
