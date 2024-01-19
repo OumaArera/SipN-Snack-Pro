@@ -1,9 +1,9 @@
 
 # Vending Machine Web Application
-    This is a simple vending machine web application built using JavaScript. It allows users to select and purchase various products, including hot drinks, juices, and snacks. The application also has an admin interface for managing products and viewing sales reports.
+This is a simple vending machine web application built using JavaScript. It allows users to select and purchase various products, including hot drinks, juices, and snacks. The application also has an admin interface for managing products and viewing sales reports.
 
 ## Getting Started
-    To run this web application, follow these steps:
+To run this web application, follow these steps:
 
 1. Clone the repository to your local machine:
 git clone https://github.com/yourusername/vending-machine-web-app.git
@@ -58,7 +58,7 @@ cd vending-machine-web-app
 -JavaScript
 
 ## Authors
-    This project has been authored by John Ouma alias Ouma Arera
+This project has been authored by John Ouma alias Ouma Arera
 
 ## License
-    This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
