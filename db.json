@@ -107,8 +107,8 @@
     {
       "id": 10,
       "name": "Uji Power",
-      "quantity": 9500,
-      "sales": 80
+      "quantity": 8250,
+      "sales": 280
     }
   ],
   "juices": [
@@ -144,8 +144,8 @@
     },
     {
       "name": "Cocktail",
-      "quantity": 9250,
-      "sales": 150,
+      "quantity": 9000,
+      "sales": 200,
       "id": 7
     }
   ],
@@ -182,15 +182,9 @@
     },
     {
       "name": "Samora",
-      "quantity": "50",
-      "sales": 0,
+      "quantity": 49,
+      "sales": 20,
       "id": 6
-    },
-    {
-      "name": "Eggs",
-      "quantity": 48,
-      "sales": 40,
-      "id": 7
     }
   ],
   "user": [
