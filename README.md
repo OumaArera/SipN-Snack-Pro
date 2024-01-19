@@ -2,11 +2,13 @@
 # Vending Machine Web Application
 This is a simple vending machine web application built using JavaScript. It allows users to select and purchase various products, including hot drinks, juices, and snacks. The application also has an admin interface for managing products and viewing sales reports.
 
+Public api: https://coffee.alexflipnote.dev/random.json
+
 ## Getting Started
 To run this web application, follow these steps:
 
 1. Clone the repository to your local machine:
-git clone https://github.com/yourusername/vending-machine-web-app.git
+git clone https://github.com/yourusername/SIPN-SNACK-PRO.git
 
 2. Navigate to the project directory:
 cd vending-machine-web-app
