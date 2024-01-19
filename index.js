@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded",  () => {
                 secondList.querySelector(".li").addEventListener("click", () => {
                     // Confirm if the product is available
                     if (parseInt(element.quantity) >= 250){
-                        billingPage(juices, juicesId,price, quantityPerUnit, sales, productQuantity)
+                        billingPage(juices, juicesId, price, quantityPerUnit, sales, productQuantity)
                     // Inform user that a product is not available
                     }else{
                         productNotAvailable(element.name)
@@ -189,16 +189,16 @@ document.addEventListener("DOMContentLoaded",  () => {
         let total = twentyShillings + tenShillings + fiveShillings;
 
         // Confirm that customer needs change
-        if (total > price) { // Use >= to handle the case where total === price
+        if (total > price) { 
             // Define change to give to the customer
             const change = total - price;
             // Amount to update in the server
             total -= change;
             // Update total sales (Note: You need to implement this logic)
-            totalSales += total; 
+            totalSales += price; 
             // Define remaining quantity
             setTimeout(() =>{
-                totalSalesUpdate(totalSales)
+                totalSalesUpdate(price)
             }, 6600)
             let remainingQuantity = productQuantity - quantityPerUnit
             // Target the card
@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded",  () => {
                 // Clear the message and display "Welcome again"
                 buy.innerHTML = `
                 <br>
-                <p class="product" style="font-size: 1.2vw">Welcome again 😊</p>`;
+                <p class="product" style="font-size: 1.2vw">Please proceed to pick your order.\n\nWelcome again 😊</p>`;
             }, 2000); // 5000 milliseconds (5 seconds)
             // Set timeout for the page to only update after the message has been populated
             setTimeout(() =>{
@@ -220,14 +220,14 @@ document.addEventListener("DOMContentLoaded",  () => {
                 updateTransaction(productUrl, productId, remainingQuantity, priceUpdate)
             }, 4000)
         } else if (total === price) {
-            totalSales += total;
+            totalSales += price;
             // Define remaining quantity
             setTimeout(() =>{
-                totalSalesUpdate(totalSales)
+                totalSalesUpdate(price)
             }, 6600)
             let buy = document.querySelector("#buy");
             buy.innerHTML= `
-                <p class="product" style="font-size: 1.2vw">Welcome again 😊</p>  
+                <p class="product" style="font-size: 1.2vw">Please proceed to pick your order.\n\nWelcome again 😊</p>  
             `;
             // Define remaining quantity
             let remainingQuantity = productQuantity - quantityPerUnit
@@ -337,7 +337,7 @@ document.addEventListener("DOMContentLoaded",  () => {
         accessRights.innerHTML = `
         <button id="report" class="log">Report</button>
         <br>
-        <button id="add" class="log">Show Categories</button>
+        <button id="add" class="log">Add New</button>
         <br>
         <form action="submit" class="remove-item">
             <button id="remove" class="log">Remove</button>
