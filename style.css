@@ -129,22 +129,22 @@
     position: absolute;
 }
 #smth{
-    top: 1130px;
+    top: 1030px;
     left: 450px;
     position: absolute;
 }
 #ppc{
-    top: 1130px;
+    top: 1030px;
     left: 800px;
     position: absolute;
 }
 #blc{
-    top: 1130px;
+    top: 1030px;
     left: 1150px;
     position: absolute;
 }
 #mnch{
-    top: 1130px;
+    top: 1030px;
     left: 100px;
     position: absolute;
 }
@@ -178,7 +178,7 @@
     font-size: 1.2vw;
     margin-left: 3px;
     margin-top: 5px;
-    color: #FF5733;
+    color: rgb(238, 181, 76);
     border: none;
     background: none;
     padding: 0;
@@ -186,7 +186,7 @@
 
 }
 #log{
-    color: #FF5733 ;
+    color: rgb(238, 181, 76);
     border: none;
     background: none;
     padding: 0;
@@ -196,7 +196,7 @@
     margin-top: 5px;
 }
 .log{
-    color: whitesmoke;
+    color: rgb(238, 181, 76);
     border: none;
     background: none;
     padding: 0;
@@ -218,7 +218,7 @@
 }
 .change{
     background-color: whitesmoke;
-    color: rgb(119, 34, 180);
+    color: rgb(150, 40, 27);
     font-size: 1.4vw;
     border: none;
     background: none;
@@ -277,7 +277,8 @@ select#catego option {
 label#categori {
     display: block;
     font-weight: bold;
-    text-align: center;
+    font-size: 1.2vw;
+    /* text-align: center; */
     color: white; /* Set the text color of the label to white */
 }
 .category{
@@ -322,4 +323,5 @@ label#categori {
 .dislike{
     color: whitesmoke;
 } */
+
 
