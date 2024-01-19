@@ -72,7 +72,9 @@ Product Details: The animated GIFs provide a visual representation of the produc
 ## Technologies Used
 - HTML
 - CSS
--JavaScript
+- JavaScript
+- JSON
+- Markdown
 
 ## Authors
 This project has been authored by John Ouma alias Ouma Arera
